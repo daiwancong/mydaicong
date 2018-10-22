@@ -1,0 +1,25 @@
+{
+	"product":
+	[
+			{
+				"img": "images/recom_img01.jpg",
+				"pTxt": "PHIUM大容量...",
+				"liTxt": "￥99.54"
+			},
+			{
+				"img": "images/recom_img02.jpg",
+				"pTxt": "PHIUM大容量...",
+				"liTxt": "￥23.54"
+			},
+			{
+				"img": "images/recom_img03.jpg",
+				"pTxt": "PHIUM大容量...",
+				"liTxt": "￥54.54"
+			},
+			{
+				"img": "images/recom_img04.jpg",
+				"pTxt": "PHIUM大容量...",
+				"liTxt": "￥15.4"
+			}
+	]
+}

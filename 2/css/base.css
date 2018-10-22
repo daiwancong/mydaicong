@@ -1,0 +1,52 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color:transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Microsoft Yahei,sans-serif;
+}
+input {
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+input::-webkit-input-placeholder {
+	color: #ccc;
+}
+input:-moz-placeholder {
+	color: #ccc;
+}
+input::-moz-placeholder {
+	color: #ccc;
+}
+input::-ms-placeholder {
+	color: #ccc;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+/*浮动*/
+.f_l {
+	float: left;
+}
+.f_r {
+	float: right;
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display: block;
+	line-height: 0;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}

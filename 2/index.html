@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>舌舌商城</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/template-native.js"></script>
+	<script type="text/template" id="template">
+		<ul class="clearfix" id="similaHover">
+			<%for(var i=0;i<items.length;i++){%>
+					<li class="f_l">
+								<a href="javascript:;">
+									<img src="<%=items[i].img%>" alt="">
+									<p><%=items[i].pTxt%></p>
+									<ul class="clearfix">
+										<li class="icon1 f_l"></li>
+										<li class="icon2 f_l"></li>
+										<li class="f_r">
+										<%=items[i].liTxt%>
+										</li>
+									</ul>
+								</a>
+						</li>
+			<%}%>
+		</ul>
+	</script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<!-- 最外部的盒子 -->
+	<div class="container" id="container">
+		<!-- 顶部搜索-->
+		<div class="header" id='header'>
+			<a href="#" class="header-service"></a>
+			<span class="search-icon"></span>
+			<input type="search" placeholder="搜索你喜欢的商品">
+			<a href="#" class="header-message"></a>
+		</div>
+		<!-- banner开始 -->
+		<div class="banner">
+			<ul class="banner-img">
+				<li><a href="#"><img src="images/banner_05.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/banner_01.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/banner_02.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/banner_03.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/banner_04.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/banner_05.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/banner_01.jpg" alt=""></a></li>
+
+			</ul>
+			<ul class="banner-index">
+				<li class="current"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!-- nav开始 -->
+		<div class="nav clearfix" id="nav">
+			<ul class="clearfix">
+				<li><a href="#"><img src="images/nav_01.png" alt=""><p>艾家超市</p></a></li>
+				<li><a href="#"><img src="images/nav_02.png" alt=""><p>海外精选</p></a></li>
+				<li><a href="#"><img src="images/nav_03.png" alt=""><p>艾家生活</p></a></li>
+				<li><a href="#"><img src="images/nav_04.png" alt=""><p>新品NEW</p></a></li>
+				<li><a href="#"><img src="images/nav_05.png" alt=""><p>艾家厨房</p></a></li>
+				<li><a href="#"><img src="images/nav_06.png" alt=""><p>艾上实惠</p></a></li>
+				<li><a href="#"><img src="images/nav_07.png" alt=""><p>艾上生鲜</p></a></li>
+				<li><a href="#"><img src="images/nav_08.png" alt=""><p>母婴儿童</p></a></li>
+			</ul>
+			<div class="line"></div>
+			<div class="newflash clearfix">
+				<img src="images/newflash.png" alt="">
+				<p id="newfh">热烈祝贺小艾在艾家获得1000元粮票… </p>
+			</div>
+		</div>
+		<!-- 限时购 -->
+		<div class="timelimit">
+			<div class="timelimit-top clearfix">
+				<h3 class="f_l">限时购</h3>
+				<p class="f_l">10点场</p>
+				<ul class="f_l">
+					<li>0</li>
+					<li>0</li>
+					<li>:</li>
+					<li>0</li>
+					<li>0</li>
+					<li>:</li>
+					<li>0</li>
+					<li>0</li>
+				</ul>
+				<a href="#" class="f_r into-icon">
+					<img src="images/into.png" alt="">
+				</a>
+			</div>
+			<div class="timelimit-btm">
+					<ul class="clearfix">
+						<li><a href="#">
+								<img src="images/timelimit_01.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>美的电压力不粘锅</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_02.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>百草味零食大礼包</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_03.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>刀具大礼包</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_04.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>美的电压力不粘锅</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_01.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>美的电压力不粘锅</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_02.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>百草味零食大礼包</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_03.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>刀具大礼包</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_04.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>美的电压力不粘锅</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+					</ul>
+			</div>
+		</div>
+		<!-- 小banner -->
+		<div class="smallbanner">
+			<div class="smallbanner-img">
+			<ul class="clearfix">
+				<li><a href="#"><img src="images/smallbanner_01.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/smallbanner_02.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/smallbanner_03.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/smallbanner_01.jpg" alt=""></a></li>
+			</ul>
+			</div>
+			<ul class="smallbanner-index clearfix">
+				<li class="current"></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!-- 商城内容 -->
+		<div class="main">
+			<!-- 优质好物 -->
+			<div class="content">
+				<div class="content-top">
+					<h3>优质好物</h3>
+				</div>
+				<div class="content-btm clearfix">
+						<ul class="clearfix">
+							<li class="f_l"><a href="#"><img src="images/content_img_01.jpg" alt=""></a></li>
+							<li class="f_r"><a href="#"><img src="images/content_img_02.jpg" alt=""></a></li>
+							<li class="f_r">
+								<a href="#"><img src="images/content_img_03.jpg" alt=""></a>
+							</li>
+						</ul>
+						<ul class="clearfix">
+							<li class="f_l"><a href="#"><img src="images/content_img_04.jpg" alt=""></a></li>
+							<li class="f_l"><a href="#"><img src="images/content_img_05.jpg" alt=""></a></li>
+							<li class="f_l"><a href="#"><img src="images/content_img_06.jpg" alt=""></a></li>
+							<li class="f_r"><a href="#"><img src="images/content_img_07.jpg" alt=""></a></li>
+							<li class="f_l"><a href="#"><img src="images/content_img_08.jpg" alt=""></a></li>
+							<li class="f_l"><a href="#"><img src="images/content_img_09.jpg" alt=""></a></li>
+						</ul>
+				</div>
+			</div>
+			<!-- 人气推荐 -->
+			<div class="content">
+				<div class="content-top clearfix">
+					<h3 class="f_l">人气推荐</h3>
+					<a href="#" class="f_r into-icon">
+						<img src="images/into.png" alt="">
+					</a>
+				</div>
+				<div class="content-btm clearfix popular">
+						<ul class="clearfix" >
+							<li class="f_l">
+								<a href="#">
+									<img src="images/recom_img01.jpg" alt="">
+									<p>PHIUM大容量...</p>
+									<ul class="clearfix">
+										<li class="icon1 f_l"></li>
+										<li class="icon2 f_l"></li>
+										<li class="f_r">￥9.87</li>
+									</ul>
+								</a>
+							</li>
+							<li class="f_r">
+								<a href="#">
+									<img src="images/recom_img02.jpg" alt="">
+									<p>乐町套头针织衫...</p>
+									<ul class="clearfix">
+										<li class="icon1 f_l"></li>
+										<li class="icon2 f_l"></li>
+										<li class="f_r">￥9.87</li>
+									</ul>
+								</a>
+							</li>
+							<li class="f_l">
+									<a href="#">
+									<img src="images/recom_img03.jpg" alt="">
+									<p>英伦风卡其色小个....</p>
+									<ul class="clearfix">
+										<li class="icon3 f_l"></li>
+										<li class="f_r">￥9.87</li>
+									</ul>
+									</a>
+							</li>
+							<li class="f_l">
+								<a href="#">
+									<img src="images/recom_img04.jpg" alt="">
+									<p>英伦风卡其色小个....</p>
+									<ul class="clearfix">
+										<li class="icon3 f_l"></li>
+										<li class="icon1 f_l"></li>
+										<li class="f_r">￥9.87</li>
+									</ul>
+
+								</a>
+							</li>
+						</ul>
+						
+				</div>
+			</div>
+			<!-- 三千美食艾家 -->
+			<div class="content">
+				<div class="content-top clearfix">
+					<h3 class="f_l">三千美食艾家</h3>
+					<a href="#" class="f_r into-icon">
+						<img src="images/into.png" alt="">
+					</a>
+				</div>
+				<div class="content-btm clearfix">
+						<ul class="clearfix">
+							<li>
+								<a href="#">
+									<img src="images/food_img01.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+				<div class="timelimit-btm">
+					<ul class="clearfix">
+						<li><a href="#">
+								<img src="images/timelimit_01.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>美的电压力不粘锅</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_02.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>百草味零食大礼包</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_03.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>刀具大礼包</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_04.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>美的电压力不粘锅</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_01.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>美的电压力不粘锅</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_02.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>百草味零食大礼包</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_03.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>刀具大礼包</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+						<li><a href="#">
+								<img src="images/timelimit_04.jpg" alt="">
+								<div class="timelimit-btm-txt">
+									<ul class="clearfix">
+										<li class="icon1"></li>
+										<li class="icon2"></li>
+										<li class="icon3"></li>
+									</ul>
+									<p>美的电压力不粘锅</p>
+									<p>￥11.99</p>
+								</div>
+							</a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<!-- 品牌艾家 -->
+			<div class="content">
+				<div class="content-top clearfix">
+					<h3 class="f_l">品牌艾家</h3>
+					<a href="#" class="f_r into-icon">
+						<img src="images/into.png" alt="">
+					</a>
+				</div>
+				<div class="content-btm clearfix">
+						<ul class="clearfix" id="ula">
+							<li class="f_l">
+								<a href="#">
+									<img src="images/brand_img01.jpg" alt="">
+									<p>高校培训 全程扶持 在线教学</p>
+								</a>
+							</li>
+							<li class="f_l">
+								<a href="#">
+									<img src="images/brand_img02.jpg" alt="">
+									<p>线下配送  不发货</p>
+								</a>
+							</li>
+						</ul>
+				</div>
+			</div>
+			<!-- 专题精选 -->
+			<div class="content">
+				<div class="content-top clearfix">
+					<h3 class="f_l">专题精选</h3>
+					<a href="#" class="f_r into-icon">
+						<img src="images/into.png" alt="">
+					</a>
+				</div>
+				<div class="content-btm clearfix">
+						<ul>
+							<li class="f_l">
+								<a href="#">
+									<img src="images/select_img_01.jpg" alt="">
+									<p>不经意的优雅BURB民族风长款外套多搭配…<span class="f_r">19.9元起</span></p>
+									<span>不经意的优雅BURBERRY 英伦风范不经意的</span>
+								</a>
+							</li>
+							<li class="f_l">
+								<a href="#">
+									<img src="images/select_img_02.jpg" alt="">
+									<p>致每一个没有钱、想活得精致的贫民窟<span class="f_r">39元起</span></p>
+									<span>粮票可用于商城内购物消费返红包</span>
+								</a>
+							</li>
+						</ul>
+				</div>
+			</div>
+			<!-- 猜你喜欢 -->
+			<div class="content" id="content6">
+				<div class="content-top clearfix">
+					<h3 class="f_l">猜你喜欢</h3>
+				</div>
+				<div class="content-btm clearfix popular" id="btnProduct">
+					<ul class="clearfix" id="similaHover">
+							<li class="f_l">
+								<a href="javascript:;">
+									<img src="images/recom_img01.jpg" alt="">
+									<p>PHIUM大容量...</p>
+									<ul class="clearfix">
+										<li class="icon1 f_l"></li>
+										<li class="icon2 f_l"></li>
+										<li class="f_r">￥9.87</li>
+									</ul>
+								</a>
+							</li>
+							<li class="f_r">
+								<a href="javascript:;">
+									<img src="images/recom_img02.jpg" alt="">
+									<p>乐町套头针织衫...</p>
+									<ul class="clearfix">
+										<li class="icon1 f_l"></li>
+										<li class="icon2 f_l"></li>
+										<li class="f_r">￥9.87</li>
+									</ul>
+								</a>
+							</li>
+							<li class="f_l">
+								<a href="javascript:;">
+									<img src="images/recom_img03.jpg" alt="">
+									<p>英伦风卡其色小个....</p>
+									<ul class="clearfix">
+										<li class="icon3 f_l"></li>
+										<li class="f_r">￥9.87</li>
+									</ul>
+								</a>
+							</li>
+							<li class="f_l">
+								<a href="javascript:;">
+									<img src="images/recom_img04.jpg" alt="">
+									<p>英伦风卡其色小个....</p>
+									<ul class="clearfix">
+										<li class="icon3 f_l"></li>
+										<li class="icon1 f_l"></li>
+										<li class="f_r">￥9.87</li>
+									</ul>
+
+								</a>
+							</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 底部导航 -->
+		<div class="footernav">
+			<ul class="clearfix" id="btmnavclick">
+				<li>
+					<a href="#">
+						<img src="images/active_icon0.png" alt="">
+						<p>首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/footernav_icon1.png" alt="">
+						<p>分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/footernav_icon2.png" alt="">
+						<p>发现</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/footernav_icon3.png" alt="">
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/footernav_icon4.png" alt="">
+						<p>我的</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+
+	</div>
+</body>
+</html>

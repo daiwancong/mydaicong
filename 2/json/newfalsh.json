@@ -1,0 +1,40 @@
+
+{
+"newsflash":[
+		{
+			"name":"热烈祝贺戴聪啊实打实在艾家获得1000元粮票…"
+			},
+			{
+			"name":" 无法便捷地查看、管理店铺的中差评。"
+			},
+			{
+			"name":"无法分辨哪些评价是由中差评修改的."
+			},
+			{
+			"name":" 新增的筛选项包括：好评、中评、差评、已修改..."
+		}
+			],
+	"product":[
+			{
+				"img": "images/recom_img01.jpg",
+				"pTxt": "PHIUM大容量...",
+				"liTxt": "￥99.54"
+			},
+			{
+				"img": "images/recom_img02.jpg",
+				"pTxt": "PHIUM大容量...",
+				"liTxt": "￥23.54"
+			},
+			{
+				"img": "images/recom_img03.jpg",
+				"pTxt": "PHIUM大容量...",
+				"liTxt": "￥54.54"
+			},
+			{
+				"img": "images/recom_img04.jpg",
+				"pTxt": "PHIUM大容量...",
+				"liTxt": "￥15.4"
+			}
+			]
+
+}
